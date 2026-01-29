@@ -1,0 +1,6 @@
+/* Basic styling */
+body { font-family: Arial, sans-serif; padding: 20px; }
+.invoice { border: 1px solid #ccc; padding: 20px; width: 400px; background: #f9f9f9; }
+.header { border-bottom: 1px solid #eee; margin-bottom: 20px; }
+.item { display: flex; justify-content: space-between; margin-bottom: 5px; border-bottom: 1px dotted #ddd; padding: 5px 0;}
+.total { font-weight: bold; margin-top: 20px; text-align: right; font-size: 1.2em; }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Invoice Viewer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Invoice Viewer</h1>
+
+    <div style="margin-bottom: 20px;">
+        <input type="number" id="invoice-id-input" placeholder="Enter Invoice ID" value="1">
+        <button onclick="loadInvoice()">Load Invoice</button>
+    </div>
+
+    <div id="loading" style="display:none;">Loading...</div>
+    <div id="error" style="color:red; display:none;"></div>
+
+    <div id="invoice-container" class="invoice" style="display:none;">
+        <div class="header">
+            <h3>Invoice #<span id="inv-id"></span></h3>
+            <p>Customer: <span id="inv-customer"></span></p>
+        </div>
+        <div id="items-list"></div>
+        <div class="total">Total: $<span id="inv-total"></span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
